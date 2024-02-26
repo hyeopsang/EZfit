@@ -1,0 +1,171 @@
+.Stacks{
+    position: relative;
+    height: 100vh;
+    background-color: #262a31;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Stacks h2{
+    position: absolute;
+    top: 50px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+.Stacks h2:hover{
+    opacity: 1;
+}
+.dotGrid{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin-top: -70%;
+}
+.dot{
+    width: 2px;
+    height: 2px;
+    background-color: #454444;
+    border-radius: 50%;
+    margin: 20px;
+}
+.dot.Ligth{
+    background-color: #FFEE66;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 1);
+}
+.stackZodiac{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+}
+.zodiacBody{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.stackZodiac  .Item{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item:hover{
+    background-color: #fffef5;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.Item:hover .itemTxt{
+    display: block;
+    position: absolute;
+    left: 110px;
+    width: 260px;
+    height: 120px;
+    padding: 15px 20px;
+    z-index: 500;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    background-color: #fffef5;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.Item:hover .stackTitle{
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 0;
+}
+.Item:hover .p{
+    margin: 0 auto;
+}
+.stackZodiac > div > img{
+    width: auto;
+    height: 60px;
+    object-fit: cover;
+}
+.itemTxt{
+    display: none;
+}
+.stackZodiac .react{
+    top: 50%;
+    margin-top: -30%;
+    left: 50%;
+    margin-left: -5%;
+}
+.stackZodiac .jquery{
+    top: 50%;
+    margin-top: -25%;
+    left: 50%;
+    margin-left: 40%;
+}
+.stackZodiac .javaScript{
+    top: 50%;
+    margin-top: -11%;
+    left: 50%;
+    margin-left: 27%;
+}
+.stackZodiac .gitHub{
+    top: 50%;
+    margin-top: 24%;
+    left: 50%;
+}
+.stackZodiac .html{
+    top: 50%;
+    margin-top: 10%;
+    left: 50%;
+    margin-left: 5%;
+}
+.stackZodiac .vsCode{
+    top: 50%;
+    margin-top: 8%;
+    left: 50%;
+    margin-left: -50%;
+}
+.stackZodiac .typeScript{
+    top: 50%;
+    margin-top: 28%;
+    left: 50%;
+    margin-left: -40%;
+}
+.stackZodiac .css{
+    top: 50%;
+    margin-top: 30%;
+    left: 50%;
+    margin-left: -22%;
+}
+.stackZodiac .figma{
+    top: 50%;
+    margin-top: 2%;
+    left: 50%;
+    margin-left: -10%;
+}
+.gradient_bottom, .gradient_top{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+.gradient_top{
+    top: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)
+    );
+}
+.gradient_bottom{
+    bottom: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)
+    );
+}
+

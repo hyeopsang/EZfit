@@ -1,0 +1,249 @@
+.Project{
+    width: 100%;
+    height: 100vh;
+    background-color: #322932;
+    text-align: center;
+    position: relative;
+}
+
+.Project h2{
+    margin: 0;
+    padding: 90px 0;
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 0.8;
+    color: rgba(255, 255, 255);
+}
+.project_in{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.slick-slider{
+  width: 25vw;
+  height: 50vh;
+  margin: 0 auto;  
+  /* box-shadow:  41px 41px 82px #a2aab7,
+             -41px -41px 82px #dce6f7; */
+  
+}
+.slick-list{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.slide_item{
+  width: 100%;
+  height: 100%;
+}
+.slide_item.item1{
+  background-color: #BFC8D7;
+  /* box-shadow:  41px 41px 82px #a2aab7,
+             -41px -41px 82px #dce6f7; */
+}
+.slide_item.item2{
+  background-color: #E2D2D2;
+  /* box-shadow:  41px 41px 82px #c0b3b3,
+             -41px -41px 82px #fff2f2; */
+}
+.slide_item.item3{
+  background-color: #E3E2B4;
+  /* box-shadow:  41px 41px 82px #c1c099,
+             -41px -41px 82px #ffffcf; */
+  /*  background: #A2B59F;
+box-shadow:  41px 41px 82px #8a9a87,
+             -41px -41px 82px #bad0b7;*/
+}
+
+.slide_item .project_Img{
+  width: 100%;
+}
+.project_Img img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.slide_item .hover{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0, 0);
+
+  display: none;
+}
+.slide_item button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.slide_item:hover .hover{
+  position: absolute;
+  display: block;
+}
+.next, .prev{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+.next{
+    top: 50%;
+    right: -50px;
+    transform: rotate(-90deg);
+    animation: arrowmove1 infinite 1500ms;
+    transition: 600ms;
+}
+@keyframes arrowmove1 {
+    0% {
+        transform: rotate(-90deg) translateY(0px);
+      }
+      50% {
+        transform: rotate(-90deg) translateY(-10px);
+      }
+      100% {
+        transform: rotate(-90deg) translateY(0px);
+      }
+    
+}
+.prev{
+    top: 50%;
+    left: -50px;
+    transform: rotate(90deg);
+    animation: arrowmove2 infinite 1500ms;
+    transition: 600ms;
+}
+@keyframes arrowmove2 {
+    0% {
+        transform: rotate(90deg) translateY(0px);
+      }
+      50% {
+        transform: rotate(90deg) translateY(-10px);
+      }
+      100% {
+        transform: rotate(90deg) translateY(0px);
+      }
+    
+}
+.slick-prev {
+  z-index: 1;
+  left: -50px;
+  
+}
+.slick-arrow{
+  color: black;
+}
+.slick-next {
+  z-index: 1;
+  right: -40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
+  opacity: 0.5;
+  color: #333;
+  
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  bottom: 30px;
+  color: white;
+}
+.slick-dots li button:before {
+    color: white;
+  }
+
+.slick-dots li.slick-active button:before {
+    color: white;
+  }
+.project_about{
+  width: 20vw;
+  padding-left: 2vw;
+}
+.about1, .about2, .about3{
+  display: none;
+}
+.about1.show, .about2.show, .about3.show{
+  display: block;
+  text-align: left;  
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+}
+.about1.show h3, .about2.show h3, .about3.show h3{
+  font-size: 2em;
+  font-weight: 800;
+}
+.ezyfitAbout{
+  font-weight: 800;
+  color: rgb(80, 79, 44);
+} 
+.useSkills{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.useSkills p{
+  color: #fff;
+  padding: 2px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.about1.show .useSkills p{
+  background-color: rgb(44, 47, 80);
+}
+.about2.show .useSkills p{
+  background-color: rgb(104, 61, 89);
+}
+.about3.show .useSkills p{
+  background-color: rgb(80, 79, 44);
+}
+.about1.hide, .about2.hide, .about3.hide{
+  display: none;
+}
+.port{
+  background-color: #333;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.appleModal, .NewBalanceModal, .EzyModal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 62vh;
+  z-index: 1000;
+  color: #fff;
+  background-color: #ffffff48;
+}
+
+.appleModal .modalImg, .NewBalanceModal .modalImg, .EzyModal .modalImg{
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+.modalImg img, .NewBalanceModal img, .EzyModal img{
+  width: 100%;
+  height: auto;
+}
+.closeModal{
+  width: 100%;
+  padding: 1vh;
+}
+.closeModal img{
+  width: 15px;
+  height: auto;
+}
